@@ -1,0 +1,10 @@
+using UnityEngine;
+using UnityBaseCode;
+
+public class #SCRIPTNAME# : Singleton<#SCRIPTNAME#>
+{
+    private void Start()
+    {
+        #NOTRIM#
+    }
+}
