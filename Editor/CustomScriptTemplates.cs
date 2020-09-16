@@ -7,25 +7,17 @@ namespace UnityBaseCode.Editor
 {
     public static class CustomScriptTemplates
     {
-        private static string TemplatePathBehaviourScript
-        {
-            get {
-                return Path.GetFullPath("Packages/UnityBaseCode/Editor/NewScriptBehaviour.cs.txt");
-            }
-        }
+        private static string _templatePathBehaviourScript =
+            "Packages/com.rodrigoueda.unitybasecode/Editor/NewScriptBehaviour.cs.txt";
 
-        private static string TemplatePathSingletonScript
-        {
-            get {
-                return Path.GetFullPath("Packages/UnityBaseCode/Editor/NewSingletonScript.cs.txt");
-            }
-        }
+        private static string _templatePathSingletonScript =
+            "Packages/com.rodrigoueda.unitybasecode/Editor/NewSingletonScript.cs.txt";
 
         [MenuItem("Assets/Create/UnityBaseCode/C# Script", priority = 80)]
         public static void CreateNewScriptBehaviour()
         {
              ProjectWindowUtil.CreateScriptAssetFromTemplateFile(
-                TemplatePathBehaviourScript, "NewBehaviourScript.cs"
+                _templatePathBehaviourScript, "NewBehaviourScript.cs"
             );
         }
 
@@ -33,7 +25,7 @@ namespace UnityBaseCode.Editor
         public static void CreateNewSingletonScript()
         {
              ProjectWindowUtil.CreateScriptAssetFromTemplateFile(
-                TemplatePathSingletonScript, "NewSingletonScript.cs"
+                _templatePathSingletonScript, "NewSingletonScript.cs"
             );
         }
     }
