@@ -68,3 +68,4 @@ You can create custom Headers for your hierarchy through **Project Settings** me
 By default, any GameObject with the name starting with "**---**" will be filter as a header.
 You can create additional filters each with a custom style.
 
+**Filter Query** and **Replace Query** uses [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1)
