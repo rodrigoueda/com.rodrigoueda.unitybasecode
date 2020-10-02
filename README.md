@@ -1,5 +1,17 @@
 # Unity Base Code
 
+## Installation
+
+<https://docs.unity3d.com/Packages/com.unity.package-manager-ui@2.1/manual/index.html>
+
+```json
+{
+    "dependencies": {
+        "com.rodrigoueda.unitybasecode": "https://github.com/rodrigoueda/com.rodrigoueda.unitybasecode.git#0.2.0"
+    }
+}
+```
+
 ## Unique identifier for every MonoBehaviour
 
 Use ``` BaseBehaviour ``` instead of the usual ``` MonoBehaviour ```.
@@ -8,7 +20,6 @@ Use ``` BaseBehaviour ``` instead of the usual ``` MonoBehaviour ```.
 using UnityEngine;
 using UnityBaseCode;
 
-[ExecuteInEditMode]
 public class TestScript : BaseBehaviour
 {
     protected override void Awake()
@@ -56,3 +67,4 @@ You can create custom Headers for your hierarchy through **Project Settings** me
 
 By default, any GameObject with the name starting with "**---**" will be filter as a header.
 You can create additional filters each with a custom style.
+
