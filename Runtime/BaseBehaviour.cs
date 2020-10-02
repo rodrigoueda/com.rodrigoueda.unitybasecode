@@ -5,11 +5,11 @@ namespace UnityBaseCode
     public class BaseBehaviour : MonoBehaviour
     {
         [HideInInspector]
-        public string guid;
+        public int guid;
 
         protected virtual void Awake()
         {
-            this.guid = System.Guid.NewGuid().ToString();
+            this.guid = this.gameObject.GetInstanceID();
         }
     }
 }
