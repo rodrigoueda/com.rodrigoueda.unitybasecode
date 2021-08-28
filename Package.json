@@ -1,7 +1,7 @@
 {
     "name": "com.rodrigoueda.unitybasecode",
     "displayName": "UnityBaseCode",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "unity": "2020.1",
     "description": "Base code for extending MonoBehaviour as well as some utilities."
 }
