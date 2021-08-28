@@ -1,4 +1,4 @@
-#if UNITY_EDITOR﻿
+#if UNITY_EDITOR
 using System.IO;
 using System.Reflection;
 using UnityEditor;
